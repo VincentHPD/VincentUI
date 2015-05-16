@@ -1,0 +1,45 @@
+.disabled {
+	pointer-events: none;
+   cursor: default;
+}
+
+.header.fixed, .header.open, .menu-open .header {
+    background-color: #116EB8;
+}
+
+.header .nav>li>a .header-close:after {
+    background-color: #1794f8;
+}
+
+.content-heading {
+	background: url(../images/backgrounds/houston.jpg) no-repeat center;
+    /*display: table;*/
+    height: 40%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 90px 0 70px 0;
+    text-align: center;
+}
+
+
+.avatar {
+    color: #fff !important;
+    background-color: #1794f8;
+}
+
+.beatMarker {
+    color: #1794f8 !important;
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 480px) {
+
+    .menu {
+      left: -400px;
+      width: 400px;
+  }
+}
