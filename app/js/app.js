@@ -7,16 +7,23 @@ app = angular.module('myApp', ['ngRoute','ngSanitize']);
 app.controller('mainController', ['$scope', function ($scope) {
 
     var mapOptions = {
-        zoom: 18,
+        zoom: 12,
         center: new google.maps.LatLng(29.7604, -95.3698),
         mapTypeId: google.maps.MapTypeId.TERRAIN
     }
 
     $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            /* Setup InputField*/
+        var inputDiv = document.getElementById('searchDiv');
+        var input = document.getElementById('pac-input');
 
+        // Set InputField inside of Map
+        $scope.map.controls[google.maps.ControlPosition.TOP_LEFT].push(inputDiv);
+        var searchBox = new google.maps.places.SearchBox(input);
     $scope.markers = [];
 
     var infoWindow = new google.maps.InfoWindow();
+    $scope.map.data.loadGeoJson('js/beats.geojson');
 
     var createMarker = function (info){
 
