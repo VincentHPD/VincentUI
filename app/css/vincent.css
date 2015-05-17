@@ -46,6 +46,15 @@ section,
 /*
    MAP
    ========================================================================== */
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 0px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
 #map {
   height: 100%;
   width: 120%;
