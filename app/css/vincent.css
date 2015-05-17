@@ -39,8 +39,8 @@ section,
 }
 @media only screen and (min-width: 480px) {
   .menu {
-    left: -50%;
-    width: 50%;
+    left: -320px;
+    width: 320px;
   }
   .menu-content {
     width: 100%;

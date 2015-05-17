@@ -11,21 +11,13 @@
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-hover display-table">
-                                    <thead class="prediction-heading">
+                                	<thead class="prediction-heading">
+                                        <th>Day</th>
                                         <th>Crime</th>
-                                        <th ng-repeat="day in week">{{day}}</th>
                                     </thead>
-                                    <tr class="murder-cases">
-                                        <th>Murder</th>
-                                        <td ng-repeat="count in murders">{{count}}</td>
-                                    </tr>
-                                    <tr class="assault-cases">
-                                        <th>Assault</th>
-                                        <td ng-repeat="count in assaults">{{count}}</td>
-                                    </tr>
-                                    <tr class="rape-cases">
-                                        <th>Rape</th>
-                                        <td ng-repeat="count in rapes">{{count}}</td>
+                                    <tr class="cases" ng-repeat="count in crimes track by $index">
+                                        <th>{{week[$index]}}</th>
+                                        <td>{{count}}</td>
                                     </tr>
                                 </table>
                             </div>

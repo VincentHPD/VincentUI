@@ -6060,7 +6060,7 @@
         ]
       },
       "properties": {
-        "name": "clear lake_12d10"
+        "name": "12d10"
       }
     },
     {
@@ -6259,7 +6259,7 @@
         ]
       },
       "properties": {
-        "name": "clear lake_12d20"
+        "name": "12d20"
       }
     },
     {
@@ -6398,7 +6398,7 @@
         ]
       },
       "properties": {
-        "name": "clear lake_12d30"
+        "name": "12d30"
       }
     },
     {
@@ -6609,7 +6609,7 @@
         ]
       },
       "properties": {
-        "name": "clear lake_12d40"
+        "name": "12d40"
       }
     },
     {
@@ -7100,7 +7100,7 @@
         ]
       },
       "properties": {
-        "name": "clear lake_12d50"
+        "name": "12d50"
       }
     },
     {
@@ -7431,7 +7431,7 @@
         ]
       },
       "properties": {
-        "name": "clear lake_12d60"
+        "name": "12d60"
       }
     },
     {
@@ -7590,7 +7590,7 @@
         ]
       },
       "properties": {
-        "name": "clear lake_12d70"
+        "name": "12d70"
       }
     },
     {
@@ -7679,7 +7679,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_1a10"
+        "name": "1a10"
       }
     },
     {
@@ -7800,7 +7800,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_1a20"
+        "name": "1a20"
       }
     },
     {
@@ -7917,7 +7917,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_1a30"
+        "name": "1a30"
       }
     },
     {
@@ -8062,7 +8062,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_1a40"
+        "name": "1a40"
       }
     },
     {
@@ -8179,7 +8179,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_1a50"
+        "name": "1a50"
       }
     },
     {
@@ -8288,7 +8288,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_2a10"
+        "name": "2a10"
       }
     },
     {
@@ -8357,7 +8357,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_2a20"
+        "name": "2a20"
       }
     },
     {
@@ -8482,7 +8482,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_2a30"
+        "name": "2a30"
       }
     },
     {
@@ -8575,7 +8575,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_2a40"
+        "name": "2a40"
       }
     },
     {
@@ -8740,7 +8740,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_2a50"
+        "name": "2a50"
       }
     },
     {
@@ -8873,7 +8873,7 @@
         ]
       },
       "properties": {
-        "name": "DT_central_2a60"
+        "name": "2a60"
       }
     },
     {
@@ -9018,7 +9018,7 @@
         ]
       },
       "properties": {
-        "name": "Eastside_11h10"
+        "name": "11h10"
       }
     },
     {
@@ -9223,7 +9223,7 @@
         ]
       },
       "properties": {
-        "name": "Eastside_11h20"
+        "name": "11h20"
       }
     },
     {
@@ -9436,7 +9436,7 @@
         ]
       },
       "properties": {
-        "name": "Eastside_11h30"
+        "name": "11h30"
       }
     },
     {
@@ -9673,7 +9673,7 @@
         ]
       },
       "properties": {
-        "name": "Eastside_11h40"
+        "name": "11h40"
       }
     },
     {
@@ -9842,7 +9842,7 @@
         ]
       },
       "properties": {
-        "name": "Eastside_11h50"
+        "name": "11h50"
       }
     },
     {
@@ -9987,7 +9987,7 @@
         ]
       },
       "properties": {
-        "name": "Fondren_17e10"
+        "name": "17e10"
       }
     },
     {
@@ -10156,7 +10156,7 @@
         ]
       },
       "properties": {
-        "name": "Fondren_17e20"
+        "name": "17e20"
       }
     },
     {
@@ -10269,7 +10269,7 @@
         ]
       },
       "properties": {
-        "name": "Fondren_17e30"
+        "name": "17e30"
       }
     },
     {
@@ -10438,7 +10438,7 @@
         ]
       },
       "properties": {
-        "name": "Fondren_17e40"
+        "name": "17e40"
       }
     },
     {
@@ -10581,7 +10581,7 @@
         ]
       },
       "properties": {
-        "name": "hobby airport_23J40"
+        "name": "23J40"
       }
     },
     {
@@ -10843,7 +10843,7 @@
         ]
       },
       "properties": {
-        "name": "iah_21i50"
+        "name": "21i50"
       }
     },
     {
@@ -10960,7 +10960,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_7c10"
+        "name": "7c10"
       }
     },
     {
@@ -11057,7 +11057,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_7c20"
+        "name": "7c20"
       }
     },
     {
@@ -11114,7 +11114,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_7c30"
+        "name": "7c30"
       }
     },
     {
@@ -11211,7 +11211,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_7c40"
+        "name": "7c40"
       }
     },
     {
@@ -11560,7 +11560,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_7c50"
+        "name": "7c50"
       }
     },
     {
@@ -11645,7 +11645,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_8c10"
+        "name": "8c10"
       }
     },
     {
@@ -11702,7 +11702,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_8c20"
+        "name": "8c20"
       }
     },
     {
@@ -11767,7 +11767,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_8c30"
+        "name": "8c30"
       }
     },
     {
@@ -11856,7 +11856,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_8c40"
+        "name": "8c40"
       }
     },
     {
@@ -11933,7 +11933,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_8c50"
+        "name": "8c50"
       }
     },
     {
@@ -12098,7 +12098,7 @@
         ]
       },
       "properties": {
-        "name": "NE_Kingwood_8c60"
+        "name": "8c60"
       }
     },
     {
@@ -12219,7 +12219,7 @@
         ]
       },
       "properties": {
-        "name": "North_3b10"
+        "name": "3b10"
       }
     },
     {
@@ -12324,7 +12324,7 @@
         ]
       },
       "properties": {
-        "name": "North_3b30"
+        "name": "3b30"
       }
     },
     {
@@ -12417,7 +12417,7 @@
         ]
       },
       "properties": {
-        "name": "north_3b40"
+        "name": "3b40"
       }
     },
     {
@@ -12494,7 +12494,7 @@
         ]
       },
       "properties": {
-        "name": "north_3b50"
+        "name": "3b50"
       }
     },
     {
@@ -12583,7 +12583,7 @@
         ]
       },
       "properties": {
-        "name": "north_6b10"
+        "name": "6b10"
       }
     },
     {
@@ -12716,7 +12716,7 @@
         ]
       },
       "properties": {
-        "name": "north_6b20"
+        "name": "6b20"
       }
     },
     {
@@ -12909,7 +12909,7 @@
         ]
       },
       "properties": {
-        "name": "north_6b30"
+        "name": "6b30"
       }
     },
     {
@@ -13118,7 +13118,7 @@
         ]
       },
       "properties": {
-        "name": "north_6b40"
+        "name": "6b40"
       }
     },
     {
@@ -13223,7 +13223,7 @@
         ]
       },
       "properties": {
-        "name": "north_6b50"
+        "name": "6b50"
       }
     },
     {
@@ -13556,7 +13556,7 @@
         ]
       },
       "properties": {
-        "name": "north_6b60"
+        "name": "6b60"
       }
     },
     {
@@ -13613,7 +13613,7 @@
         ]
       },
       "properties": {
-        "name": "NW_4f10"
+        "name": "4f10"
       }
     },
     {
@@ -13686,7 +13686,7 @@
         ]
       },
       "properties": {
-        "name": "NW_4f20"
+        "name": "4f20"
       }
     },
     {
@@ -13923,7 +13923,7 @@
         ]
       },
       "properties": {
-        "name": "NW_4f30"
+        "name": "4f30"
       }
     },
     {
@@ -14004,7 +14004,7 @@
         ]
       },
       "properties": {
-        "name": "NW_5f10"
+        "name": "5f10"
       }
     },
     {
@@ -14113,7 +14113,7 @@
         ]
       },
       "properties": {
-        "name": "NW_5f20"
+        "name": "5f20"
       }
     },
     {
@@ -14246,7 +14246,7 @@
         ]
       },
       "properties": {
-        "name": "NW_5f30",
+        "name": "5f30",
         "description": "\t\t\t"
       }
     },
@@ -14396,7 +14396,7 @@
         ]
       },
       "properties": {
-        "name": "NW_5f40"
+        "name": "5f40"
       }
     },
     {
@@ -14553,7 +14553,7 @@
         ]
       },
       "properties": {
-        "name": "SC_10h10"
+        "name": "10h10"
       }
     },
     {
@@ -14702,7 +14702,7 @@
         ]
       },
       "properties": {
-        "name": "SC_10h20"
+        "name": "10h20"
       }
     },
     {
@@ -14819,7 +14819,7 @@
         ]
       },
       "properties": {
-        "name": "SC_10h30"
+        "name": "10h30"
       }
     },
     {
@@ -14964,7 +14964,7 @@
         ]
       },
       "properties": {
-        "name": "SC_10h50"
+        "name": "10h50"
       }
     },
     {
@@ -15213,7 +15213,7 @@
         ]
       },
       "properties": {
-        "name": "SC_10h60"
+        "name": "10h60"
       }
     },
     {
@@ -15406,7 +15406,7 @@
         ]
       },
       "properties": {
-        "name": "SC_10h70"
+        "name": "10h70"
       }
     },
     {
@@ -15539,7 +15539,7 @@
         ]
       },
       "properties": {
-        "name": "SC_10h80"
+        "name": "10h80"
       }
     },
     {
@@ -15626,7 +15626,7 @@
         ]
       },
       "properties": {
-        "name": "southeast_13d10"
+        "name": "13d10"
       }
     },
     {
@@ -15777,7 +15777,7 @@
         ]
       },
       "properties": {
-        "name": "southeast_13d20"
+        "name": "13d20"
       }
     },
     {
@@ -15864,7 +15864,7 @@
         ]
       },
       "properties": {
-        "name": "southeast_13d30"
+        "name": "13d30"
       }
     },
     {
@@ -16059,7 +16059,7 @@
         ]
       },
       "properties": {
-        "name": "southeast_13d40"
+        "name": "13d40"
       }
     },
     {
@@ -16142,7 +16142,7 @@
         ]
       },
       "properties": {
-        "name": "southeast_14d10"
+        "name": "14d10"
       }
     },
     {
@@ -16317,7 +16317,7 @@
         ]
       },
       "properties": {
-        "name": "southeast_14d20"
+        "name": "14d20"
       }
     },
     {
@@ -16520,7 +16520,7 @@
         ]
       },
       "properties": {
-        "name": "southeast_14d30"
+        "name": "14d30"
       }
     },
     {
@@ -16811,7 +16811,7 @@
         ]
       },
       "properties": {
-        "name": "southeast_14d40"
+        "name": "14d40"
       }
     },
     {
@@ -16888,7 +16888,7 @@
         ]
       },
       "properties": {
-        "name": "SC_10h40"
+        "name": "10h40"
       }
     }
   ]

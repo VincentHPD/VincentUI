@@ -7,7 +7,7 @@ app = angular.module('myApp', ['ngRoute', 'ngSanitize']);
 app.controller('mainController', ['$scope', '$http', '$q', function($scope, $http, $q) {
     $scope.murders = $scope.assaults = $scope.rapes = [];
     $scope.beatName = "";
-    $scope.week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+    $scope.week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     var data = [];
     var mapOptions = {
         zoom: 12,
@@ -92,9 +92,16 @@ app.controller('mainController', ['$scope', '$http', '$q', function($scope, $htt
     });
 
     $scope.map.data.addListener('mouseover', function(event) {
+
+
         $scope.$apply(function() {
-            $scope.openSB = false;
+            $scope.openSB = true;
+            getData();
+            beat = event.feature.A.name.toUpperCase();
+            $scope.beatName = beat;
+            $scope.crimes = getBeatData(beat);
         });
+
         $scope.map.data.overrideStyle(event.feature, {
             strokeWeight: 2.0,
             fillColor: 'green'
@@ -109,17 +116,8 @@ app.controller('mainController', ['$scope', '$http', '$q', function($scope, $htt
 
     //display beat information
     $scope.map.data.addListener('click', function(event) {
-        $scope.$apply(function() {
-            $scope.openSB = true;
-            getData();
-            beat = event.feature.A.name.toUpperCase();
-            var beatData = getBeatData(beat);
-
-            $scope.beatName = beat;
-            $scope.murders = beatData.murders;
-            $scope.assaults = beatData.assaults;
-            $scope.rapes = beatData.assaults;
-            console.log($scope.openSB);
+    	$scope.$apply(function() {
+            $scope.openSB = false;
         });
     });
 
