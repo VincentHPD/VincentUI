@@ -1,23 +1,11 @@
-<nav class="menu" id="profile">
-	<div class="menu-scroll">
-		<div class="menu-wrap">
-			<div class="">
-				<!-- <div class="menu-top-img">
-					<img alt="John Smith" src="images/backgrounds/houston_phone.jpg">
-				</div> -->
-				<div class="menu-top-info">
-					<div class="menu-top-user">
-						<span class="avatar pull-left">
-							<span class="fa fa-map-marker fa-2x beatMarker"></span>
-						</span>{{beatName}}
-					</div>
-				</div>
-			</div>
-			<div class="menu-content">
-				<div class="col-xs-12">
-					<div class="panel panel-default ">
+<nav class="menu" ng-class="{'open-sidebar': openSB}" id="profile">
+    <div class="menu-scroll">
+        <div class="menu-wrap">
+            <div class="menu-content">
+                <div class="col-xs-12">
+                    <div class="panel panel-default ">
                         <div class="panel-heading">
-                            <h2>Beat: <span class="beat-name"></span></h2>
+                            <h2><span class="fa fa-map-marker fa-2x beatMarker"></span> Beat: {{beatName}}</span></h2>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -45,8 +33,8 @@
                         </div>
                         <!-- /.panel-body -->
                     </div>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </nav>
