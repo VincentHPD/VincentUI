@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 
-var crimes = JSON.parse(fs.readFileSync("app/js/future.json", "UTF-8"))["crimes"];
+var crimes = JSON.parse(fs.readFileSync("nonParsed.json", "UTF-8"))["crimes"];
 var beats = {};
 for (var i = crimes.length - 1; i >= 0; i--) {
     var beat = crimes[i]["beat"];
