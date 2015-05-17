@@ -1,3 +1,4 @@
+@sideBarWidth: 50%;
 html,body,section,.content-inner,.content {
     height: 100%;
 }
@@ -42,16 +43,19 @@ html,body,section,.content-inner,.content {
 @media only screen and (min-width: 480px) {
 
     .menu {
-      left: -400px;
-      width: 400px;
-  }
+        left: -1 * @sideBarWidth;
+        width: @sideBarWidth;
+    }
+    .menu-content {
+        width: 100%;
+    }
 }
 
 /*
    MAP
    ========================================================================== */
 
-#pac-input {
+   #pac-input {
     background-color: #fff;
     font-family: Roboto;
     font-size: 15px;
@@ -79,6 +83,7 @@ h2 {
 .container.mapContainer {
   margin-left: 0px;
   padding-left: 0px;
+  min-width: 100%;
 }
 
 

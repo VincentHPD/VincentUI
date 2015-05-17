@@ -4,13 +4,19 @@
 * Vincent Website
 */
 app = angular.module('myApp', ['ngRoute','ngSanitize']);
-app.controller('mainController', ['$scope', function ($scope) {
+app.controller('mainController', ['$scope','$http', '$q', function ($scope, $http, $q) {
 
+	$scope.murders = $scope.assaults = $scope.rapes = [];
+	$scope.beatName = "";
+	$scope.week = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+	var data = [];
 	var mapOptions = {
 		zoom: 12,
 		center: new google.maps.LatLng(29.7604, -95.3698),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
+
+
 
 	$scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
 	/* Setup InputField*/
@@ -76,16 +82,16 @@ app.controller('mainController', ['$scope', function ($scope) {
 		// Update map's bounds
 		$scope.map.fitBounds(bounds);
 	});
-
-$scope.map.data.setStyle(function(feature) {
-	var fill = feature.getProperty('fill');
-	var stroke = feature.getProperty('stroke');
-	return {
-		fillColor: '#FF0000',
-		strokeColor: stroke
-	};
-});
 	//Add styles to Polygons
+	$scope.map.data.setStyle(function(feature) {
+		var fill = feature.getProperty('fill');
+		var stroke = feature.getProperty('stroke');
+		return {
+			fillColor: '#FF0000',
+			strokeColor: stroke
+		};
+	});
+
 	$scope.map.data.addListener('mouseover', function(event) {
 		$scope.map.data.overrideStyle(event.feature, {
 			strokeWeight: 2.0,
@@ -99,6 +105,39 @@ $scope.map.data.setStyle(function(feature) {
 		});
 	});
 
+	//display beat information
+	$scope.map.data.addListener('click', function(event) {
+		$scope.$apply(function () {
+			getData();
+			beat = event.feature.A.name.toUpperCase();
+			var beatData = getBeatData(beat);
+
+			$scope.beatName = beat;
+			$scope.murders = beatData.murders;
+			$scope.assaults = beatData.assaults;
+			$scope.rapes = beatData.assaults;
+		});
+		console.log($scope.beatName);
+
+
+	});
+
+	var getData = function() {
+		var deferred = $q.defer();
+		if (data.length) {
+			deferred.resolve(data);
+		} else {
+			$http.get('js/future.json').success(function(d) {
+				data = d;
+				deferred.resolve(data);
+				console.log(data);
+			});
+		}
+		return deferred.promise;
+	};
+	var getBeatData = function(_beat){
+		return data[_beat];
+	};
 
 	///* Setup InfoWindow */
 	var InfoWindow = function(content) {
@@ -110,21 +149,16 @@ $scope.map.data.setStyle(function(feature) {
 
         return iWindow;
     };
+
+    getData();
 }]);
-
-
 
 app.directive('sideBar', function(){
 	return {
 		restrict: 'E',
 		controller: 'mainController',
-		templateUrl: './partials/sideBar.tpl.html',
+		templateUrl: './partials/sideBar.tpl.html'
 	};
 });
-
-
-
-
-
 
 

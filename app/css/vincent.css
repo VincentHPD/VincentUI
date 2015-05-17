@@ -39,8 +39,11 @@ section,
 }
 @media only screen and (min-width: 480px) {
   .menu {
-    left: -400px;
-    width: 400px;
+    left: -50%;
+    width: 50%;
+  }
+  .menu-content {
+    width: 100%;
   }
 }
 /*
@@ -72,6 +75,7 @@ h2 {
 .container.mapContainer {
   margin-left: 0px;
   padding-left: 0px;
+  min-width: 100%;
 }
 .group {
   position: relative;
