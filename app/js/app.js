@@ -3,8 +3,8 @@
  *
  * Vincent Website
  */
- app = angular.module('myApp', ['ngRoute']);
- app.controller('mainController', ['$scope', '$http', '$q', function($scope, $http, $q) {
+ app = angular.module('myApp', ['ngRoute','ui.bootstrap']);
+ app.controller('mainController', ['$scope', '$http', '$q', '$modal', function($scope, $http, $q, $modal) {
 
  	$scope.beatName = "";
  	$scope.enableSideBar = true;
@@ -16,12 +16,32 @@
  		mapTypeId: google.maps.MapTypeId.ROADMAP
  	}
 
+    $scope.open = function (size) {
+
+        var modalInstance = $modal.open({
+          animation: true,
+          templateUrl: 'myModalContent.html',
+          controller: 'ModalInstanceCtrl',
+          size: 'lg',
+          resolve: {
+            items: function () {
+              return $scope.items;
+          }
+      }
+  });
+
+        modalInstance.result.then(function (selectedItem) {
+          $scope.selected = selectedItem;
+      }, function () {
+          console.log('Modal dismissed at: ' + new Date());
+      });
+    };
 
 
- 	$scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
- 	/* Setup InputField*/
- 	var inputDiv = document.getElementById('searchDiv');
- 	var input = document.getElementById('pac-input');
+    $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    /* Setup InputField*/
+    var inputDiv = document.getElementById('searchDiv');
+    var input = document.getElementById('pac-input');
 
     // Set InputField inside of Map
     $scope.map.controls[google.maps.ControlPosition.TOP_LEFT].push(inputDiv);
@@ -168,6 +188,21 @@
     getData();
 }]);
 
+app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+
+  $scope.items = items;
+  $scope.selected = {
+
+  };
+
+  $scope.ok = function () {
+    $modalInstance.close($scope.selected.item);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+});
 app.directive('sideBar', function() {
 	return {
 		restrict: 'E',
