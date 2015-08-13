@@ -40,6 +40,9 @@
 
     $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
     
+    
+    $scope.map.data.loadGeoJson('js/beats.geojson');
+    
     //Add styles to Polygons
     $scope.map.data.setStyle(function(feature) {
     	var fill = feature.getProperty('fill');
