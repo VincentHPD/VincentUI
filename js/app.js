@@ -59,7 +59,7 @@
     		}
 
     		getData();
-    		beat = event.feature.A.name.toUpperCase();
+    		beat = event.feature.G.name.toUpperCase();
     		$scope.beatName = beat;
     		$scope.crimes = getBeatData(beat);
     	});
