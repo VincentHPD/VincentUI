@@ -1,0 +1,256 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: FLATTY - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+ body {
+  background-color: #1794f8;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+.logo {
+  font-family: 'Stark';
+  font-weight: 400;
+  font-size: 45px;
+  color: #fff;
+}
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Stark';
+    font-weight: 300;
+    color: #333;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h3 {
+	color: #95a5a6;
+	font-weight: 400;
+}
+
+h4 {
+	color: #95a5a6;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #1794f8;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.navbar {
+  font-family: 'Stark';
+}
+.navbar-default {
+	background-color: #1794f8;
+	border-color: transparent;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #116EB8;
+    background-color: transparent;
+}
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
+/* Helpers */
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.form-control {
+	height: 42px;
+	font-size: 18px;
+	width: 280px;
+}
+
+i {
+	margin: 8px;
+	color: #1794f8;
+}
+
+
+/* HeaderWrap */
+#headerwrap {
+	/* background: url(../img/bg01.jpg) no-repeat center top; */
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 40px 40px 10px 40px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	margin-top: 60px;
+	margin-bottom: 15px;
+	color: white;
+	font-size: 45px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+#map-canvas {
+	width: 100%;
+	height: 50%;
+    min-height: 325px;
+    margin:0 auto;
+    display: block;
+}
+@media (min-width: 992px) {
+    #map-canvas {
+        height: 95%;
+    }
+}
+
+/*
+Landing Page Animation
+========================================================================== */
+.conteneur
+{
+  background-color:#1794f8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; bottom: 0;
+  left:0; right: 0;
+  overflow: hidden;
+}
+.html5_div
+{
+  -webkit-animation-duration: 4.8s;-webkit-animation-iteration-count: 1;-webkit-animation-fill-mode: both;-webkit-animation-name: first;
+  -moz-animation-duration: 4.8s;-moz-animation-iteration-count: 1;-moz-animation-fill-mode: both;-moz-animation-name: first;
+  -ms-animation-duration: 4.8s;-ms-animation-iteration-count: 1;-ms-animation-fill-mode: both;-ms-animation-name: first;
+  animation-duration: 4.8s;animation-iteration-count: 1;animation-fill-mode: both;animation-name: first;
+}
+@-webkit-keyframes first
+{
+  0% {-webkit-transform: translate(000px,1500px);}
+  25%,65%,75% {-webkit-transform: translate(000px,285px);}
+  100% {-webkit-transform: translate(000px,285px);}
+}
+@-moz-keyframes first
+{
+  0% {-moz-transform: translate(000px,1500px);}
+  25%,65%,75% {-moz-transform: translate(000px,285px);}
+  100% {-moz-transform: translate(000px,285px);}
+}
+@-ms-keyframes first
+{
+  0% {-ms-transform: translate(000px,1500px);}
+  25%,65%,75% {-ms-transform: translate(000px,285px);}
+  100% {-ms-transform: translate(000px,285px);}
+}
+@keyframes first
+{
+  0% {transform: translate(000px,1500px);}
+  25%,65%,75% {transform: translate(000px,285px);}
+  100% {transform: translate(000px,285px);}
+}
+.txthtml
+{
+  vertical-align: top;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto';
+  margin-left: 10px;
+  height:95px;
+  /*overflow: hidden;*/
+  -webkit-animation-duration: 1s;-webkit-animation-iteration-count: 1;-webkit-animation-fill-mode: both;-webkit-animation-name: txthtml;
+  -moz-animation-duration: 1s;-moz-animation-iteration-count: 1;-moz-animation-fill-mode: both;-moz-animation-name: txthtml;
+  -ms-animation-duration: 1s;-ms-animation-iteration-count: 1;-ms-animation-fill-mode: both;-ms-animation-name: txthtml;
+  animation-duration: 1s;animation-iteration-count: 1;animation-fill-mode: both;animation-name: txthtml;
+}
+@-webkit-keyframes txthtml
+{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes txthtml
+{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-ms-keyframes txthtml
+{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes txthtml
+{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
