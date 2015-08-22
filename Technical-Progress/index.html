@@ -25,7 +25,6 @@
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
   <style type="text/css"></style></head>
-
   <body>
 
 	<!-- Fixed navbar -->
@@ -47,15 +46,19 @@
 		</div><!--/.nav-collapse -->
 	  </div>
 	</div>
-
-	<div id="headerwrap">
-		<div class="container-fluid">
+	<div class="container">
 			<div class="row">
-				TECHNICAL PROGRESS
+				<div class="col-xs-12">
+					<style>div.google-visualization-tooltip {
+						max-width: 200px;
+						color:#000;
+						background-color:#fff;
+						padding: 12px;
+					}</style>
+					<div id="chart_div"></div>
+				</div>
 			</div><!-- /row -->
 		</div><!-- /container -->
-	</div><!-- /headerwrap -->
-
 
 	<!-- Bootstrap core JavaScript
 	================================================== -->
@@ -64,6 +67,7 @@
 	<script src="../assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places&sensor=false"></script>
 	<script src="../assets/js/scripts.js"></script>
-
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  	<script src="../assets/js/technicalProgress.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
