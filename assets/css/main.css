@@ -178,7 +178,7 @@ i {
 /*
 Landing Page Animation
 ========================================================================== */
-.conteneur
+.landingContainer
 {
   background-color:#1794f8;
   width: 100%;
@@ -186,7 +186,7 @@ Landing Page Animation
   position: absolute;
   top: 0; bottom: 0;
   left:0; right: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .html5_div
 {
