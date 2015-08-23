@@ -1,0 +1,32 @@
+{
+	"cols": [
+	{"id": "Date", "label": "Date","type": "string"},
+	{"id": "Accuracy", "label": "Accuracy","type": "number"},
+	{"id": "Desc", "role": "tooltip", "type": "string", "p" : { "html" : true } }
+	],
+	"rows": [{
+		"c": [
+			{"v": "4/4/15"},
+			{"v": 42},
+			{"v": "Accuracy: <b>42%</b><br>Algorithm: <b><u>kNN Classifier</u></b><br>Location: <b>CodeRED hackathon</b><br><br>Predicted the most likely type of crime in a given beat for the following week."}
+		]
+	},{
+		"c": [
+			{"v": "5/17/15"},
+			{"v": 49},
+			{"v": "Accuracy: <b>49%</b><br>Algorithm: <b><u>kNN Classifier</u></b><br>Location: <b>City of Houston hackathon</b><br><br>Predicted the most likely type of crime in a given beat for the following week. First time having an interface: select a beat, see the crime forecast for that beat’s week."}
+		]
+	},{
+		"c": [
+			{"v": "6/27/15"},
+			{"v": 19},
+			{"v": "Accuracy: <b>19%</b><br>Algorithm: <b><u>Linear Regression</u></b><br>Predicted normalized chance of occurrence for crime types."}
+		]
+	},{
+		"c": [
+			{"v": "7/17/15"},
+			{"v": 82},
+			{"v": "Accuracy: <b>82%</b><br>Algorithm: <b><u>kNN Classifier</u></b><br>Forecasted if crime will occur or not occur,<br>for each type of crime in each beat on the following week."}
+		]
+	}]
+}

@@ -12,15 +12,23 @@ google.setOnLoadCallback(drawChart);
 // draws it.
 function drawChart() {
 
-	$.get("../../Technical-Progress/technicalProgress.json", function(jsonData, status){
+	$.get("../../Progress/technicalProgress.json", function(jsonData, status){
 
 		// Create the data table.
 		var dataTb = new google.visualization.DataTable(jsonData);
 
 		// Set chart options
 		var options = {
-			'title':'Vincent\'s Progress over time.',
-			'tooltip': {isHtml: true}
+			pointSize: 20,
+			titlePosition: 'none',
+			title:'Progress of Vincent',
+			tooltip: {isHtml: true},
+			hAxis: {
+			  title: 'Date (M/D/Y)'
+			},
+			vAxis: {
+			  title: 'Accuracy (%)'
+			},
 		};
 
 		// Instantiate and draw our chart, passing in some options.

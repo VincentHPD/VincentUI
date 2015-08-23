@@ -169,11 +169,6 @@ i {
     margin:0 auto;
     display: block;
 }
-@media (min-width: 992px) {
-    #map-canvas {
-        height: 95%;
-    }
-}
 
 /*
 Landing Page Animation
@@ -257,12 +252,47 @@ Landing Page Animation
 /* ==========================================================================
 Technical Progress
 ========================================================================== */
-
+.mainTechView {
+  margin-top: 100px;
+}
+.titleSection {
+  text-align: center;
+  z-index: 2;
+}
+.titleSection .chartTitle,
+.titleSection .subNote {
+  color: #fff;
+}
+.subNote {
+  font-size: 85%;
+  color: #555;
+}
+.titleSection .subNote {
+  font-size: 85%;
+}
+.subNote u {
+  color: #95a5a6;
+}
+.mapSection {
+  z-index: 1;
+}
 #chart_div {
-  margin-top:150px;
   height: 70%;
   max-width: 100%;
 }
 
 
-
+@media (min-width: 992px) {
+    #map-canvas {
+        height: 95%;
+    }
+    .titleSection {
+      margin-bottom: -75px;
+    }
+    .titleSection .chartTitle {
+      color: #1794f8;
+    }
+    .titleSection .subNote {
+      color: #555;
+    }
+}

@@ -40,20 +40,27 @@
 		</div>
 		<div class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="/Demo"><b>Demo</b></a></li>
 			<li><a href="http://blog.vincenthpd.com/"><b>Blog</b></a></li>
-			<li><a href="/Technical-Progress"><b>Technical Progress</b></a></li>
+			<li><a href="/Progress"><b>Progress</b></a></li>
 		  </ul>
 		</div><!--/.nav-collapse -->
 	  </div>
 	</div>
-	<div class="container">
+	<div class="container mainTechView">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 titleSection">
+					<h2 class="chartTitle">Progress of Vincent</h2>
+					<div class="subNote">Please hover over a point for a short description</div>
+				</div>
+				<div class="col-xs-12 mapSection">
 					<style>div.google-visualization-tooltip {
-						max-width: 200px;
+						max-width: 250px;
+						max-height: 800px;
 						color:#000;
 						background-color:#fff;
 						padding: 12px;
+						z-index: 3;
 					}</style>
 					<div id="chart_div"></div>
 				</div>
