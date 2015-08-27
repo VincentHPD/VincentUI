@@ -113,6 +113,18 @@ hr {
 	color: white;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: #116EB8;
+}
 /* Helpers */
 
 .mt {
@@ -254,6 +266,7 @@ Technical Progress
 ========================================================================== */
 .mainTechView {
   margin-top: 100px;
+  background-color: #fff;
 }
 .titleSection {
   text-align: center;
@@ -261,7 +274,7 @@ Technical Progress
 }
 .titleSection .chartTitle,
 .titleSection .subNote {
-  color: #fff;
+  color: #1794f8;
 }
 .subNote {
   font-size: 85%;
@@ -289,10 +302,12 @@ Technical Progress
     .titleSection {
       margin-bottom: -75px;
     }
-    .titleSection .chartTitle {
-      color: #1794f8;
+    .mapSection {
+      margin-top: 30px;
     }
-    .titleSection .subNote {
-      color: #555;
+}
+@media (max-height: 665px) {
+    .mapSection {
+      margin-top: 100px;
     }
 }
