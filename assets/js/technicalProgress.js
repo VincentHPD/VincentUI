@@ -1,4 +1,6 @@
-
+/**
+ * Copyright 2015, Fabian Buentello, All rights reserved.
+ */
 
 // Load the Visualization API and the piechart package.
 google.load('visualization', '1', {'packages':['corechart']});

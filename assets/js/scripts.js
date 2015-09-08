@@ -1,3 +1,7 @@
+/**
+ * Copyright 2015, Fabian Buentello, All rights reserved.
+ */
+
 $(document).ready(function() { /* google maps ----*/
 
     // Set global Variables
