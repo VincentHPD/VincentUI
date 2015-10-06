@@ -1,6 +1,3 @@
-/**
- * Copyright 2015, Fabian Buentello, All rights reserved.
- */
 {
 	"cols": [
 	{"id": "Date", "label": "Date","type": "string"},
