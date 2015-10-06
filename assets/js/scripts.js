@@ -14,7 +14,7 @@ $(document).ready(function() { /* google maps ----*/
     })
 
     var displayBeatData = function(event) {
-        var beatName = event.feature.G.name.toUpperCase()
+        var beatName = event.feature.getProperty('name').toUpperCase()
         beatDisplay.html(beatName)
         if (data != null) {
             if (beatName in data) {
